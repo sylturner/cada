@@ -5,13 +5,13 @@
 
 body {
   background-color: rgb(218,189,153);
-  background: url(../img/bg-noise.png) repeat;
+  background: url(../images/bg-noise.png) repeat;
   color: #000;
 }
 
 .top-nav-collapse {
   background-color: rgb(128,111,91);
-  background: url(../img/bg-noise-dark.png) repeat;
+  background: url(../images/bg-noise-dark.png) repeat;
 }
 .navbar-custom.top-nav-collapse {
   border-bottom: none;
