@@ -1,0 +1,46 @@
+<button type="button" class="btn btn-primary btn-lg <%= type %>-button" data-toggle="modal" data-target="#<%= store.first %>"><%=store.last.name%></button>
+<div class="modal fade" id="<%= store.first %>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"><%= store.last.name %></h4>
+      </div>
+      <div class="modal-body">
+        <p class="address-hours">
+        <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <a target="_blank" href="https://maps.google.com/maps?q=<%= "#{store.last.address.split(" ").join("+")}+#{store.last.zip_code}" %>"><%= store.last.address %></a><br/>
+        <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> <a href="tel:<%= store.last.phone %>"><%= store.last.phone %></a><br/>
+        <span class="glyphicon glyphicon-time" aria-hidden="true"></span> <em>Hours:</em><br/>
+        <%= store.last.hours %>
+        </p>
+        <p><%= store.last.desc %></p>
+        <div class="center-block text-center social">
+          <% if store.last.website %>
+            <a class="btn btn-default btn-lg" href="<%= store.last.website %>"><i class="fa fa-globe"></i> Website</a>
+          <% end %>
+          <% if store.last.facebook %>
+            <a class="btn btn-default btn-lg btn-facebook" href="<%= store.last.facebook %>"><i class="fa fa-facebook-official"></i> Facebook</a>
+          <% end %>
+          <% if store.last.twitter %>
+            <a class="btn btn-default btn-lg btn-twitter" href="<%= store.last.twitter %>"><i class="fa fa-twitter"></i> Twitter</a>
+          <% end %>
+          <% if store.last.instagram %>
+            <a class="btn btn-default btn-lg btn-instagram" href="<%= store.last.instagram %>"><i class="fa fa-instagram"></i> Instagram</a>
+          <% end %>
+          <% if store.last.pinterest %>
+            <a class="btn btn-default btn-lg btn-pinterest" href="<%= store.last.pinterest %>"><i class="fa fa-pinterest"></i> Pinterest</a>
+          <% end %>
+          <% if store.last.googleplus %>
+            <a class="btn btn-default btn-lg btn-googleplus" href="<%= store.last.googleplus %>"><i class="fa fa-google-plus"></i> Google+</a>
+          <% end %>
+          <% if store.last.ebay %>
+            <a class="btn btn-default btn-lg btn-ebay" href="<%= store.last.ebay %>"><img src="images/ebay.png" height="24"/></a>
+          <% end %>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

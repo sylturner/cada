@@ -1,0 +1,143 @@
+/* background image credit:
+   Glen Edelson - https://flic.kr/p/5cNALc
+   Creative Commons 2.0 - https://creativecommons.org/licenses/by/2.0/
+*/
+
+* {
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+}
+body {
+  background-color: rgb(218,189,153);
+  background: url(../images/bg-noise.png) repeat;
+  color: #000;
+}
+
+.top-nav-collapse {
+  background-color: rgb(128,111,91);
+  background: url(../images/bg-noise-dark.png) repeat;
+}
+.navbar-custom.top-nav-collapse {
+  border-bottom: none;
+}
+.top-nav-collapse.navbar-custom a {
+  /*color: #000;*/
+}
+@media (max-width: 767px) {
+  .navbar-custom {
+    background-color: rgba(0,0,0,0.5);
+  }
+}
+
+.navbar-custom a:hover, .navbar-custom a:active  {
+  color: #FFF;
+}
+.navbar-toggle {
+  color: #FFF;
+}
+
+.logo {
+  padding-top: 50px;
+  max-width: 100%;
+}
+
+.logo text {
+  display:none;
+}
+
+.map-embed {
+  height: 550px;
+}
+a {
+  color: #993000;
+}
+
+a:hover, a:focus {
+  color: #DA2400;
+}
+
+.btn {
+  white-space: normal;
+}
+
+.btn-default {
+  color: #993000;
+  border-color: #993000;
+}
+
+.btn-default:hover, .btn-default:focus {
+  border-color: #993000;
+  background-color: #993000;
+  color: #FFF;
+}
+
+.btn-primary {
+  color: #fff;
+  border-color: rgba(255,255,255,0.25);
+  background-color: #993000;
+}
+
+.btn-primary.active, .btn-primary.focus, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .open>.dropdown-toggle.btn-primary {
+  border-color: #DA2400;
+  background-color: #DA2400;
+}
+
+.social a {
+  margin-bottom: 5px;
+}
+
+#directions, #join {
+  margin-top: 35px;
+}
+
+.restaurant-button {
+  background-color: #009D57;
+}
+.restaurant-button:hover {
+  border-color: #00C373;
+  background-color: #00C373;
+}
+.other-button {
+  background-color: #795046;
+}
+.other-button:hover {
+  border-color: #CF897B;
+  background-color: #CF897B;
+}
+
+.store-section {
+  padding-top: 20px;
+  clear:both;
+}
+.store-section h3 {
+  margin-bottom: 20px;
+}
+.img-responsive {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-facebook {
+  color: #3B5998;
+}
+
+.btn-twitter {
+  color: #00aced;
+}
+
+.btn-googleplus {
+  color: #dd4b39;
+}
+
+.btn-instagram {
+  color: #517fa4;
+}
+
+.btn-pinterest {
+  color: #cb2027;
+}
+.btn-ebay image {
+  height: 24px;
+}
+
