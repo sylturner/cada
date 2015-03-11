@@ -215,7 +215,7 @@ a:focus {
 }
 
 @-webkit-keyframes pulse {    
-    0 {
+    0% {
         -webkit-transform: scale(1);
         transform: scale(1);
     }
@@ -231,8 +231,8 @@ a:focus {
     }
 }
 
-@-moz-keyframes pulse {    
-    0 {
+@-moz-keyframes pulse {
+    0% {
         -moz-transform: scale(1);
         transform: scale(1);
     }
