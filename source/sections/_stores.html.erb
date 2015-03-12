@@ -1,0 +1,47 @@
+<!-- Shops Section -->
+<section id="shops" class="content-section text-center">
+<div class="shops-section">
+  <div class="container">
+    <div class="col-lg-8 col-lg-offset-2" id="shops">
+      <h2>Stroll from Shop to Shop</h2>
+      <p>Still playing with how to handle this section.</p>
+      <iframe src="https://mapsengine.google.com/map/u/0/embed?mid=zMyhsF3_QU8E.klVYploWvPgw" width="640" height="480" class="map-embed img-responsive"></iframe>
+
+      <% data.shops.sort_by{|x| x.first}.each do |store| %>
+        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#<%= store.first %>"><%=store.last.name%></button>
+        <div class="modal fade" id="<%= store.first %>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel"><%= store.last.name %></h4>
+              </div>
+              <div class="modal-body">
+                <p class="address-hours">
+                <%= store.last.address %><br/>
+                <a href="tel:<%= store.last.phone %>"><%= store.last.phone %></a><br/>
+                <%= store.last.hours %>
+                </p>
+                <p><%= store.last.desc %>
+                  <% if store.last.website %>
+                    <br/><a href="<%= store.last.website %>"><i class="fa fa-globe"></i> Website</a>
+                  <% end %>
+                  <% if store.last.facebook %>
+                    <br/><a href="<%= store.last.facebook %>"><i class="fa fa-facebook-official"></i> Facebook</a>
+                  <% end %>
+                  <% if store.last.googleplus %>
+                    <br/><a href="<%= store.last.googleplus %>"><i class="fa fa-google-plus"></i> Google+</a>
+                  <% end %>
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+</section>
