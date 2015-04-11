@@ -3,7 +3,7 @@
 <div class="shops-section">
   <div class="container">
     <div class="col-lg-8 col-lg-offset-2" id="shops">
-      <h2>Stroll from Shop to Shop</h2>
+      <h2 class="text-center">Stroll from Shop to Shop</h2>
       <iframe src="https://mapsengine.google.com/map/u/0/embed?mid=zMyhsF3_QU8E.klVYploWvPgw" width="100%" height="100%" class="map-embed img-responsive"></iframe>
       <br/>
       <% data.shops.sort_by{|x| x.first}.each_slice(5) do |slice| %>
@@ -19,7 +19,7 @@
                 </div>
                 <div class="modal-body">
                   <p class="address-hours">
-                  <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <a target="_blank" href="https://maps.google.com/maps?q=<%= "#{store.last.address.split(" ").join("+")}+30341" %>"><%= store.last.address %></a><br/>
+                  <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> <a target="_blank" href="https://maps.google.com/maps?q=<%= "#{store.last.address.split(" ").join("+")}+#{store.last.zip_code}" %>"><%= store.last.address %></a><br/>
                   <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> <a href="tel:<%= store.last.phone %>"><%= store.last.phone %></a><br/>
                   <span class="glyphicon glyphicon-time" aria-hidden="true"></span> <em>Hours:</em><br/>
                   <%= store.last.hours %>
