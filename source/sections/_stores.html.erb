@@ -4,7 +4,10 @@
   <div class="container">
     <div class="col-xs-12 col-lg-8 col-lg-offset-2" id="shops">
       <h2 class="text-center">Stroll from Shop to Shop</h2>
-      <iframe src="https://mapsengine.google.com/map/u/0/embed?mid=zMyhsF3_QU8E.klVYploWvPgw" width="100%" height="100%" class="map-embed img-responsive"></iframe>
+      <iframe src="https://mapsengine.google.com/map/u/0/embed?mid=zMyhsF3_QU8E.klVYploWvPgw" width="100%" height="100%" class="hidden-xs map-embed img-responsive"></iframe>
+      <div class='btn-group-vertical col-xs-12 visible-xs'>
+        <a class="btn btn-primary btn-lg" href="https://www.google.com/maps/d/viewer?mid=zMyhsF3_QU8E.klVYploWvPgw"><i class="fa fa-map-marker"></i> View Map</a>
+      </div>
       <br/>
       <% data.shops.sort_by{|x| x.first}.each_slice(5) do |slice| %>
       <div class='btn-group-vertical col-xs-12'>
