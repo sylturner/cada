@@ -1,8 +1,8 @@
 name: "Consignment Furniture Depot"
 address: "5461 Peachtree Road,"
-zip: "30341"
+zip_code: "30341"
 phone: "770-452-1545"
-hours: "Mon - Fri: 11:00am-6:00pm. Sat: 10:00pm-6:00pm. Sun: 1pm-5pm"
+hours: "Monday - Friday: 11:00am-6:00pm<br/>Saturday: 10:00pm-6:00pm<br/>Sunday: 1:00pm-5:00pm"
 desc: "With over 12,000 square feet of showroom space, we are one of 
 the largest consignment furniture stores in Georgia and the entire Southeast. 
 The Depot is a retail Consignment Furniture outlet that offers the savvy 
