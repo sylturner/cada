@@ -47,7 +47,7 @@ body {
 }
 
 .map-embed {
-  height: 480px;
+  height: 550px;
 }
 a {
   color: #993000;
@@ -87,6 +87,6 @@ a:hover, a:focus {
   margin-bottom: 5px;
 }
 
-#directions {
+#directions, #join {
   margin-top: 35px;
 }
