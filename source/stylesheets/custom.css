@@ -57,6 +57,10 @@ a:hover, a:focus {
   color: #DA2400;
 }
 
+.btn {
+  white-space: normal;
+}
+
 .btn-default {
   color: #993000;
   border-color: #993000;
@@ -70,11 +74,15 @@ a:hover, a:focus {
 
 .btn-primary {
   color: #fff;
-  border-color: #993000;
+  border-color: rgba(255,255,255,0.25);
   background-color: #993000;
 }
 
 .btn-primary.active, .btn-primary.focus, .btn-primary:active, .btn-primary:focus, .btn-primary:hover, .open>.dropdown-toggle.btn-primary {
   border-color: #DA2400;
   background-color: #DA2400;
+}
+
+.social a {
+  margin-bottom: 5px;
 }
