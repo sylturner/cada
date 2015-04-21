@@ -11,7 +11,7 @@
       <div class="store-section">
         <h3 class="text-center">Shops</h3>
         <div class='btn-group-vertical col-xs-12'>
-          <% data.shops.each do |shop| %>
+          <% data.shops.sort.each do |shop| %>
             <%= partial("sections/store", :locals => { store: shop, type: "store" }) %>
           <% end %>
         </div>
@@ -19,7 +19,7 @@
       <div class="store-section">
         <h3 class="text-center">Restaurants</h3>
         <div class='btn-group-vertical col-xs-12'>
-          <% data.restaurants.each do |shop| %>
+          <% data.restaurants.sort.each do |shop| %>
             <%= partial("sections/store", :locals => { :store => shop, type: "restaurant" }) %>
           <% end %>
         </div>
@@ -27,7 +27,7 @@
       <div class="store-section">
         <h3 class="text-center">Other</h3>
         <div class='btn-group-vertical col-xs-12'>
-          <% data.other.each do |shop| %>
+          <% data.other.sort.each do |shop| %>
             <%= partial("sections/store", :locals => { :store => shop, type: "other" }) %>
           <% end %>
         </div>
