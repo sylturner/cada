@@ -90,3 +90,26 @@ a:hover, a:focus {
 #directions, #join {
   margin-top: 35px;
 }
+
+.restaurant-button {
+  background-color: #009D57;
+}
+.restaurant-button:hover {
+  border-color: #00C373;
+  background-color: #00C373;
+}
+.other-button {
+  background-color: #795046;
+}
+.other-button:hover {
+  border-color: #CF897B;
+  background-color: #CF897B;
+}
+
+.store-section {
+  padding-top: 20px;
+  clear:both;
+}
+.store-section h3 {
+  margin-bottom: 20px;
+}
