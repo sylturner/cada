@@ -1,0 +1,72 @@
+<html><head><META content="text/html; charset=ISO-8859-1" http-equiv=Content-Type>
+<title>Welcome Page </title>
+<meta name="description" content="Description3">
+<meta name="keywords" content="key3">
+
+</head>
+<script>
+document.write('<script src="js/subnavig.js"></');
+document.write('script>');
+document.write('<script src="js/gen_subnavig.js"></');
+document.write('script>');
+document.write('<script src="js/title.js"></');
+document.write('script>');
+document.write('<script src="js/ba.js"></');
+document.write('script>');
+document.write('<script src="js/email.js"></');
+document.write('script>');
+document.write('<script src="js/homefun.js"></');
+document.write('script>');
+document.write('<script src="js/flashfun.js"></');
+document.write('script>');
+document.write('<script src="js/navig.js"></');
+document.write('script>');
+document.write('<script src="js/mi.js"></');
+document.write('script>');
+document.write('<script src="js/header.js"></');
+document.write('script>');
+document.write('<script src="js/mt.js"></');
+document.write('script>');
+document.write('<script src="js/main.js"></');
+document.write('script>');
+document.write('<script src="js/st.js"></');
+document.write('script>');
+document.write('<script src="js/base2.js"></');
+document.write('script>');
+</script>
+<script>
+fontface();
+font_size();
+</script>
+<a href="" style="color:000000" onClick="return emailhref()">
+<script>
+email();
+</script>
+</a></font>
+<script>
+document.write('<script src="js/base21.js"></');
+document.write('script>');
+document.write('<script src="js/home.js"></');
+document.write('script>');
+document.write('<script src="js/ng.js"></');
+document.write('script>');
+document.write('<script src="js/blog.js"></');
+document.write('script>');
+document.write('<script src="js/flash.js"></');
+document.write('script>');
+document.write('<script src="js/base3.js"></');
+document.write('script>');
+</script>
+<center><font face=verdana size=2>UNDER CONSTRUCTION</font></center><script>
+document.write('<script src="js/banner.js"></');
+document.write('script>');
+document.write('<script src="js/footer.js"></');
+document.write('script>');
+</script><TABLE width="782" border="0" cellspacing="0" cellpadding="2" align="center" style="border-right:1px solid #000000; border-left:1px solid #000000;" background="img/base/bg_table.gif">  <TR>     <TD width="5"><spacer type="block" width="5">&nbsp;</TD>    <TD align="right"><FONT face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><a href="site_map.html">Site Map </a></FONT></TD>    <TD width="5"><SPACER type="block" width="5">&nbsp;</TD>  </TR></TABLE><script>
+document.write('<script src="js/dfooter.js"></');
+document.write('script>');
+</script>
+<script>
+document.write('<script src="js/fun_call.js"></');
+document.write('script>');
+</script>

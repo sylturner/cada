@@ -74,12 +74,25 @@ end
 
 activate :dotenv, env: 'deploy.env'
 
-activate :deploy do |deploy|
-  deploy.build_before = true
-  deploy.method   = ENV["DEPLOY_METHOD"]
-  deploy.host     = ENV["DEPLOY_HOST"]
-  deploy.port     = ENV["DEPLOY_PORT"]
-  deploy.path     = ENV["DEPLOY_PATH"]
-  deploy.user     = ENV["DEPLOY_USER"]
-  deploy.password = ENV["DEPLOY_PASSWORD"]
+case ENV['TARGET'].to_s.downcase
+when 'staging'
+  activate :deploy do |deploy|
+    deploy.build_before = true
+    deploy.method   = ENV["STG_DEPLOY_METHOD"]
+    deploy.host     = ENV["STG_DEPLOY_HOST"]
+    deploy.port     = ENV["STG_DEPLOY_PORT"]
+    deploy.path     = ENV["STG_DEPLOY_PATH"]
+    deploy.user     = ENV["STG_DEPLOY_USER"]
+    deploy.password = ENV["STG_DEPLOY_PASSWORD"]
+  end
+when 'production'
+  activate :deploy do |deploy|
+    deploy.build_before = true
+    deploy.method   = ENV["PROD_DEPLOY_METHOD"]
+    deploy.host     = ENV["PROD_DEPLOY_HOST"]
+    deploy.port     = ENV["PROD_DEPLOY_PORT"]
+    deploy.path     = ENV["PROD_DEPLOY_PATH"]
+    deploy.user     = ENV["PROD_DEPLOY_USER"]
+    deploy.password = ENV["PROD_DEPLOY_PASSWORD"]
+  end
 end
