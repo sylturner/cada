@@ -2,7 +2,13 @@ name: "Atlanta Furniture Restoration"
 address: "3515 Broad Street"
 zip_code: "30341"
 phone: "770-457-3665"
-hours: "Tuesday - Saturday: 10:30am-5:00pm"
-desc: "Atlanta Furniture Restoration has been serving the Atlanta area for over 40 years. Voted “Best of Atlanta” by Atlanta Magazine. We are skilled in all facets of our trade."
+hours: "Tuesday - Saturday: 10:30am-5:00pm<br/><em>For your convenience, please call first as we may be out on a call</em>"
+desc: "Craftsman owned and operated <strong>SINCE 1969</strong>. Awarded <strong>BEST OF ATLANTA</strong><br/>
+Expert repairs and restorations, from the simplest to the most intricate. We
+are a full service, onsite workshop dedicated to the repair, restoration,
+and refinishing of fine furniture and antiques. For over 45 years, experts
+in hand chair caning. Articles about us have been featured in the <em>Wall
+Street Journal, Miami Herald, and Atlanta Magazine</em>, as well as
+numerous T.V. interviews for our local stations."
 website: "http://www.atlantafurniturerestoration.com"
 googleplus: "https://plus.google.com/105963994772039889344/about?hl=en"
